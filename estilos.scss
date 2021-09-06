@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.masLeidos{
+    text-align: center;
+    background-color: rgb(94, 105, 121);
+    color: white;
+    font-size: 50px;
+
+}
+.encabezado{
+    background-color: rgb(94, 105, 121);
+    background-size: 100%;
+    margin: 0px 0px 5px 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.header__h1--color{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+    text-decoration: underline;
+    color: honeydew;
+}
+
+
+
+
+.fondo{
+    
+    background-image:url(IMG/image-from-rawpixel-id-3237432-original.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.navbar-nav{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    transition: transform ease-in-out 250ms;
+}
+nav a{
+    opacity: 1;
+    
+}
+nav a::before{
+    content: "";
+    display: block;
+    height: 5px;
+    background: white;
+    
+    top: -1em;
+    left: 0;
+    right: 0;
+    transform: scale(0,1);
+    transition: transform ease-in-out 0.5s;
+}
+
+nav a:hover::before{
+    transform: scale(1,1) ;
+    
+}
+
+
+
+.full__container{
+    background-color: none;
+    
+    
+}
+.contenedora__inicio{
+    
+    
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+.card{
+    padding: 10px;
+    margin:20px 0px 15px 0px;
+    background-color: rgb(94, 105, 121);
+    color: #fff;
+    text-align: center;
+    transition: all 1s;
+}
+
+
+/*footer*/
+
+
+:root{
+    --color-facebook:  #3b5998;
+    --color-instagram: #125688;
+    --color-twitter: #55acee;
+    --color-pinterest:#bb0000;
+}
+
+
+
+.root{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 15px;
+    background-color:rgb(94, 105, 121) ;
+    bottom: 0px;
+    left: 0px;
+  
+
+}
+
+
+.icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+
+.icon:hover{
+    
+    transform: scale(1.3,1.3);
+    text-decoration:none;
+    background-color: white;
+    color: black;
+
+}
+
+.icon:not(:first-child){
+margin-left: 20px;
+
+}
+
+.icon-container{
+    display: flex;
+}
+
+.icon-facebook{
+    background-color: var(--color-facebook);
+
+}
+
+.icon-instagram{
+    background-color: var(--color-instagram);
+
+}
+
+.icon-twitter{
+    background-color: var(--color-twitter);
+
+}
+.icon-pinterest{
+
+    background-color: var(--color-pinterest);
+}
+.icon-youtube{
+
+    background-color: var(--color-pinterest);
+}
+
+
+
+/* carusel */
+.encabezado-carusel{
+    text-align: center;
+display: flex;
+}
+.carousel{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 5px 0px 10px 0px;
+
+    background-color:rgb(94, 105, 121) ;
+    
+}
+.carousel-item{
+    width: 50%;
+    
+    text-align: right;
+    margin-left: 150px;
+    }
+
+.carousel-control-next:hover{
+    transform: scale(2,2);
+    color: black;
+}
+
+.carousel-control-prev:hover{
+    transform: scale(2,2);
+    color: black;
+
+}
+
+@media only screen and (min-width: 460px) {
+
+    .carousel-item{
+   
+        opacity: 1;
+    }
+
+
+
+    .carousel{
+     
+        opacity: 1;}
+}
+
+@media only screen and (max-width: 627px) {
+    .carousel-item{
+   
+        opacity: 0;
+    }
+
+    
+
+    .carousel{
+     
+        opacity: 0;}
+}
+
+
+/* formulario */
+
+.form-btn{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+}
+
+.formdiv{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+ margin: auto;
+ margin-top: 100px;
+ margin-bottom: 200px;
+    background-color:rgb(94, 105, 121) ;
+    padding:10px 20px;
+    box-sizing: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+ 
+ padding:10px 20px;
+ box-sizing: 20px;
+ border-radius: 10px;
+ justify-content: center;
+ align-items: center;
+}
+
+.Contactanos-form{
+    display: flex;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+input,textarea {
+
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+
+}
+
+textarea{
+min-height: 200px;
+max-height: 300px;
+max-width: 100%;
+}
+
+.btn-genero{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    border: none;
+    font-size: 30px;
+
+}
+
+.btn-genero:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s;
+    color: rgb(255, 223, 181);
+}
+
+.masLeidos{
+    text-align:center ;
+    font-size: 60px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+}
